@@ -1,0 +1,28 @@
+.userpro{
+    width: 4rem;
+    height:4rem;
+    border-radius: 20rem;
+}
+.profile{
+    display: flex;
+    flex-direction:row;
+}
+.user-id{
+    display: flex;
+    flex-direction:column;
+    margin-left: 1rem;
+}
+.user-id a{
+    text-decoration: unset;
+    color: white;
+}
+.user-id a:nth-child(2){
+    opacity: 0.5;
+}
+.switch-acc{
+    margin-left: 4rem;
+}
+.switch-acc a{
+    color: blue;
+    text-decoration: unset;
+}

@@ -1,0 +1,47 @@
+.Sidenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
+}
+.Sidenav_Logo{
+    margin: 20px;
+    width: 120px;
+}
+.Sidenav__Buttons{
+    margin: 20px;
+}
+.home,
+.search,
+.explore,
+.reels,
+.messages,
+.likes,
+.add{
+    margin-left:1rem;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-style: unset;
+}
+.Sidenav_Home,
+.Sidenav_Search,
+.Sidenav_Explore,
+.Sidenav_Reels,
+.Sidenav_Messages,
+.Sidenav_Likes,
+.Sidenav_Add{
+  border-radius:15px;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  background-color: black;
+}
+.Sidenav_Home:hover,
+.Sidenav_Search:hover,
+.Sidenav_Explore:hover,
+.Sidenav_Reels:hover,
+.Sidenav_Messages:hover,
+.Sidenav_Likes:hover,
+.Sidenav_Add:hover{
+  background-color:rgba(255, 255, 255, 0.2);
+}
