@@ -1,0 +1,14 @@
+.Timeline{
+    display: flex;
+    flex-direction: row;
+}
+.Timeline-posts{
+    margin:2rem 18rem;
+}
+.Timeline-right{
+    flex: 0.8;
+    margin-top: 2rem;
+}
+.post{
+    width:30rem;
+}

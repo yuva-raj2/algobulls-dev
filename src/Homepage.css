@@ -1,0 +1,10 @@
+.Homepage{
+    display: flex;
+    flex-direction: row;
+}
+.Sidenav{
+    flex:0.2;
+}
+.Timeline{
+    flex: 0.8;
+}
