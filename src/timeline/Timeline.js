@@ -1,31 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Timeline.css";
 import Suggestions from './Suggestions';
 import Posts from "./posts/Posts";
-import Posts1 from "../assets/anime-1.jfif";
-import Posts2 from "../assets/anime-2.jfif";
-import Posts3 from "../assets/anime-3.jfif";
 function Timeline() {
+  const [post,setpost]=useState([
+    {
+      user:"Yuvi",
+      id:1,
+      timestamp:43,
+      likes:4000,
+      views:5000,
+      postsimg:"../anime",
+    },
+    {
+      user:"Raj",
+      id:2,
+      timestamp:46,
+      likes:5000,
+      views:7000,
+      postsimg:"../anime",
+    },
+    {
+      user:"Raja",
+      id:3,
+      timestamp:50,
+      likes:500,
+      views:700,
+      postsimg:"../anime",
+    },
+  ])
   return (
     <div className='Timeline'>
       <div className='Timeline-left'>
         <div className='Timeline-posts'>
-          <Posts/>
           <div className="Posts-footer">
-            <img src={Posts1} alt="anime-1st-post" className='post'/>
+           {post.map(post=>(<Posts/>))}
           </div>
           <br/>
           <br/>
-          <Posts/>
-          <div className="Posts-footer">
-            <img src={Posts2} alt="anime-2nd-post" className='post'/>
-          </div>
-          <br/>
-          <br/>
-          <Posts/>
-          <div className="Posts-footer">
-            <img src={Posts3} alt="anime-3rd-post" className='post'/>
-          </div>
         </div>
       </div>
       <div className='Timeline-right'><Suggestions/></div>

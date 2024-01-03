@@ -1,16 +1,21 @@
-.Posts{
-    display: flex;
-    flex-direction:row;
-}
 .Posts-logo{
+    display: flex;
+    flex-direction: row;
     background-color: white;
-    color: black;
     border-radius: 20px;
     width:2rem;
     height: 2rem;
 }
 .p-logo{
     margin:2rem 1rem 0px 0.5rem;
+    color: black;
+}
+.Posts-img{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.Posts-img img{
+    width: 15rem;
 }
 .Posts-image{
     display: flex;
